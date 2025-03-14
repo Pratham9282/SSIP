@@ -1,7 +1,7 @@
 /* ====== General Styles ====== */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e8f5e9; /* Softer green for improved contrast */
+    background-color: #F0F7FF; /* Softer green for improved contrast */
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -53,11 +53,11 @@ main {
 .location-section h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #4CAF50;
+    color: #007BFF;
 }
 
 .check-in-btn, .verify-btn {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -70,13 +70,13 @@ main {
 }
 
 .check-in-btn:hover, .verify-btn:hover {
-    background-color: #388E3C;
+    background-color: #007BFF;
     transform: scale(1.05);
 }
 
 .map-placeholder {
     background-color: #f0f0f0;
-    border: 2px dashed #4CAF50;
+    border: 2px dashed #007BFF;
     border-radius: 8px;
     padding: 20px;
     color: #333;
@@ -86,7 +86,7 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: #fff;
     width: 100%;
 }
@@ -113,6 +113,56 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+/* Loader Animation */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Popup Notification */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slide-in 0.5s ease;
+}
+
+.popup.error {
+    background-color: #f44336;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes slide-in {
+    from { opacity: 0; transform: translateX(100%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 
 @media (max-width: 600px) {
     .container {
