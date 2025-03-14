@@ -1,0 +1,91 @@
+/* ====== Body Styling ====== */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #88b7ea, #026de0);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== Login Container ====== */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== Heading ====== */
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* ====== Input Fields ====== */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* ====== Buttons ====== */
+button {
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+}
+
+/* ====== Register Link ====== */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+    }   
+    
+    
+}
