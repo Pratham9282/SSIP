@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration | AI & GPS Attendance System</title>
+    <link rel="stylesheet" href="css/user_reg.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>User Registration</h1>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="reg-username">Username</label>
+                <input type="text" id="reg-username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" placeholder="Create a password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <button type="button" class="register-btn" onclick="registerUser()">Register</button>
+        </form>
+
+        <p id="register-message"></p>
+        </div>
+
+    <script src="js/user_reg.js"></script>
+</body>
+</html>

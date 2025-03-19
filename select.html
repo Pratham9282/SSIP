@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection | AI & GPS Attendance System</title>
+    <link rel="stylesheet" href="css/select.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p class="subtitle">Please select your role to proceed:</p>
+
+        <div class="role-selection">
+            <div class="role-card" id="userCard">
+                <img src="img/icons8-user-50.png" alt="User Icon">
+                <h2>User</h2>
+                <p>For employees, students, and staff to mark attendance.</p>
+                <button class="btn" onclick="redirectTo('user')">Proceed as User</button>
+            </div>
+
+            <div class="role-card" id="adminCard">
+                <img src="img/icons8-admin-50.png" alt="Admin Icon">
+                <h2>Admin</h2>
+                <p>For managers, teachers, or admins to manage records.</p>
+                <button class="btn" onclick="redirectTo('admin')">Proceed as Admin</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/select.js"></script>
+</body>
+</html>
